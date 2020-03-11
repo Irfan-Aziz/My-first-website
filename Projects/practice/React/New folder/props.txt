@@ -1,0 +1,50 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+ /**  var person={name: "Tony Starc",
+  job: "Begger",
+  income: "10$"
+}
+var person2={
+  name: "Steve Rogers",
+  job: "junkie",
+  income: "7$"
+}
+var style={
+  color:'red'
+}*/
+const nayoks=['Riaz','Salman Shah','Omar'];
+  return (
+    <div className="App">
+      <header className="App-header">
+        
+        <p>My first react paragraph</p>
+        
+        <Person name="Carl" name2="Johnson"></Person>
+        <Person name="Max" name2="Payne"></Person>
+        <Person name="Mona" name2="Max"></Person>
+        <Person name={nayoks[2]} name2="Sunny"></Person>  */
+        
+
+      </header>
+    </div>
+  );
+}
+function Person(props){
+  const PersonStyle={
+    border:'2px solid gray',
+    margin:'10px',
+    borderRadius:'5px'
+  }
+  console.log(props);
+  return (
+  <div style={PersonStyle}>
+    <h1>Name: {props.name+" "+props.name2}</h1>
+    <h3>Hero of the year</h3>
+  </div>
+  )
+}
+
+export default App;
